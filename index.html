@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyD7C_ZaNuXfWToyumh_BaLtDMR5N9aIkR4",
+            authDomain: "fir-authentication-9d26c.firebaseapp.com",
+            databaseURL: "https://fir-authentication-9d26c.firebaseio.com",
+            projectId: "fir-authentication-9d26c",
+            storageBucket: "fir-authentication-9d26c.appspot.com",
+            messagingSenderId: "520772987976",
+            appId: "1:520772987976:web:e0b2608668daf77199fc7d"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+</head>
+
+<body>
+
+    <form>
+        <div>
+            <h1>Firebase Authentication</h1>
+
+            <h2>Sign Up Form</h2>
+            <input type="email" placeholder="email" id="email" />
+            <input type="password" placeholder="password" id="password" />
+            <button type="button" onclick="signup()">Sign Up</button>
+        </div>
+<br><br>
+
+        <div>
+           <h2>Login Form</h2>
+            <input type="email" placeholder="email" id="email-login" />
+            <input type="password" placeholder="password" id="password-login" />
+            <button type="button" onclick="login()">LOGIN</button>
+        </div>
+    </form>
+    <script src="app.js"></script>
+</body>
+
+</html>
